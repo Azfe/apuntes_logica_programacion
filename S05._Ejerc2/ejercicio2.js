@@ -22,18 +22,15 @@ function palindromo(texto){
         arrayRev[j] = texto[i];
         j++;        
     }
-
-    console.log("---------");
+    
     for(let i = 0; i < texto.length; i++){
         console.log(arrayRev[i]);
     }
-    console.log("---------");
-
-    let cadena = arrayRev.toString();
-
-    //cadena = cadena.replace(',', ' ');
-
-    console.log(cadena.replace(/,/g, ''));
+    
+    let cadena = arrayRev.join('');
+  
+    console.log(cadena);
+    //console.log(cadena.replace(/,/g, ''));
 
     
     for(let i = 0; i < texto.length; i++){        
@@ -51,5 +48,3 @@ function palindromo(texto){
         console.log("¡Error! La palabra introducida NO es un palíndromo");
     }
 }
-
-//let num = parseInt(prompt("Introduce un número"));
